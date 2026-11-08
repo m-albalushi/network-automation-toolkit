@@ -1,0 +1,12 @@
+- name: Create VLANs
+  hosts: switches
+  gather_facts: no
+  tasks:
+    - name: Make sure VLANs exist
+      cisco.ios.ios_vlans:
+        config:
+          - vlan_id: 10
+            name: USERS
+          - vlan_id: 20
+            name: SERVERS
+        state: merged

@@ -1,0 +1,10 @@
+backups/
+inventory.ini
+devices.txt
+.vault_pass
+*.vault
+group_vars/
+__pycache__/
+venv/
+*.retry
+.ansible/

@@ -1,0 +1,10 @@
+- name: Backup switch configs
+  hosts: switches
+  gather_facts: no
+  tasks:
+    - name: Save running config
+      cisco.ios.ios_config:
+        backup: yes
+        backup_options:
+          dir_path: ./backups
+          filename: "{{ inventory_hostname }}.cfg"

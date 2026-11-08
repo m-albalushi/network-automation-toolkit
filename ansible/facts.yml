@@ -1,0 +1,10 @@
+- name: Test connection
+  hosts: switches
+  gather_facts: no
+  tasks:
+    - name: Get device info
+      cisco.ios.ios_facts:
+
+    - name: Show version
+      debug:
+        msg: "{{ inventory_hostname }} runs {{ ansible_net_version }}"
