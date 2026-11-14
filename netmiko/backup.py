@@ -6,13 +6,13 @@ os.makedirs("backups", exist_ok=True)
 today = datetime.now().strftime("%Y-%m-%d")
 
 # line 1 is the username, line 2 is the password
-with open("credentials_example.txt") as f:
+with open("credentials.txt") as f:
     lines = f.read().splitlines()
 username = lines[0]
 password = lines[1]
 
 # one IP per line
-with open("devices_example.txt") as f:
+with open("devices.txt") as f:
     ips = f.read().splitlines()
 
 for ip in ips:
