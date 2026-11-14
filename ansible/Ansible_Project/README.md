@@ -44,6 +44,31 @@ ansible-playbook Switches.yml
 ```
 
 
+## Dependencies
+
+This project requires:
+
+- Ubuntu Linux
+- Python 3
+- Ansible
+- Cisco IOS Ansible collection
+- Ansible Network Common collection
+- SSH access to Cisco switches
+
+### Install Ansible collections
+
+Run the following command:
+
+```bash
+ansible-galaxy collection install -r requirements.yml
+```
+
+### Run the playbook
+
+```bash
+ansible-playbook  info.yml
+```
+
 ## Generated Output
 
 After running the playbook, the following folders and files are generated automatically:
