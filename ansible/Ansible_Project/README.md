@@ -66,7 +66,7 @@ ansible-galaxy collection install -r requirements.yml
 ### Run the playbook
 
 ```bash
-ansible-playbook  info.yml
+ansible-playbook  Switches.yml
 ```
 
 ## Generated Output
