@@ -1,1 +1,6 @@
-
+venv/
+backups/
+credentials.txt
+devices.txt
+__pycache__/
+*.pyc
